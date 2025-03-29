@@ -1,0 +1,82 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+.button-3d {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 20px;
+  background: linear-gradient(to bottom, #4f9eea, #2a80d2);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 
+    0 8px 0 #1c6bba,
+    0 10px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.15s ease;
+  cursor: pointer;
+}
+
+.button-3d:hover {
+  background: linear-gradient(to bottom, #5babf3, #3792e5);
+  transform: translateY(2px);
+  box-shadow: 
+    0 6px 0 #1c6bba,
+    0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.button-3d:active {
+  transform: translateY(8px);
+  box-shadow: 0 0 0 #1c6bba, 0 0 0 rgba(0, 0, 0, 0.3);
+}
+
+.button-3d.green {
+  background: linear-gradient(to bottom, #4bc970, #3ab158);
+  box-shadow: 
+    0 8px 0 #2c8c44,
+    0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.button-3d.green:hover {
+  background: linear-gradient(to bottom, #59d680, #45c065);
+  box-shadow: 
+    0 6px 0 #2c8c44,
+    0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.button-3d.green:active {
+  box-shadow: 0 0 0 #2c8c44, 0 0 0 rgba(0, 0, 0, 0.3);
+}
+
+.button-3d.red {
+  background: linear-gradient(to bottom, #e74c3c, #c0392b);
+  box-shadow: 
+    0 8px 0 #a82315,
+    0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.button-3d.red:hover {
+  background: linear-gradient(to bottom, #f15b4c, #d14a3a);
+  box-shadow: 
+    0 6px 0 #a82315,
+    0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.button-3d.red:active {
+  box-shadow: 0 0 0 #a82315, 0 0 0 rgba(0, 0, 0, 0.3);
+}
